@@ -2,7 +2,7 @@
   "name": "aws-cdk-lambda",
   "version": "0.1.0",
   "bin": {
-    "aws-cdk-lambda": "bin/aws-cdk-lambda.js"
+    "aws-cdk-lambda": "cdk/aws-cdk-lambda.js"
   },
   "scripts": {
     "build": "tsc",

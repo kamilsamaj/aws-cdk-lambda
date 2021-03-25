@@ -1,6 +1,9 @@
 # aws-cdk-lambda
 
-Official example from https://docs.aws.amazon.com/cdk/latest/guide/serverless_example.html
+An improved version of the Lambda example from https://docs.aws.amazon.com/cdk/latest/guide/serverless_example.html
+
+* Store all CDK-related code in `cdk` directory
+* Main Lambda handler is also written in Typescript
 
 ## Useful commands
 

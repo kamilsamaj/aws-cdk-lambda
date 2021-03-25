@@ -4,6 +4,7 @@ const S3 = new AWS.S3();
 
 const bucketName = process.env.BUCKET;
 
+// Lambda Handler
 exports.main = async function (event, context) {
   try {
     const method = event.httpMethod;
@@ -12,6 +13,7 @@ exports.main = async function (event, context) {
       if (event.path === "/") {
         const data = await S3.listObjectsV2({ Bucket: bucketName }).promise();
         const body = {
+          // @ts-ignore
           widgets: data.Contents.map((e) => {
             return e.Key;
           }),
